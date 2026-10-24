@@ -237,4 +237,57 @@ render=function(page='home'){
   renderBeforeSocialApps(page);
 };
 content.addEventListener('click',e=>{const photo=e.target.closest('[data-real-photo]');if(photo){const titles=['민제 웃는 순간','고양이 같은 이주','젬킷 모먼트','우리만의 암호','다정한 손끝','오늘의 기억','핑크빛 하루','같이 남긴 순간','오래 간직하기'];showToast(titles[Number(photo.dataset.realPhoto)]+' ♡');}});
-</script></body></html>
+
+
+<script>
+/* JEMKIT 설정: 배경화면, 인스타그램 게시물, 사진 */
+const JEMKIT_SETTINGS = {
+  wallpapers: {
+    lock: '',
+    home: ''
+  },
+
+  instagramPosts: [
+    {
+      username: 'minje.zip',
+      avatar: '🐶',
+      image: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80',
+      caption: '별거 안 했는데 웃긴 하루 🍪',
+      likes: '2,411',
+      comments: '댓글 18개 모두 보기',
+      time: '2시간 전'
+    },
+    {
+      username: 'eju.day',
+      avatar: '🐱',
+      image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80',
+      caption: '오늘의 기록은 여기까지 ♡',
+      likes: '1,908',
+      comments: '댓글 23개 모두 보기',
+      time: '5시간 전'
+    },
+    {
+      username: 'jemkit.archive',
+      avatar: '🩷',
+      image: 'images/post3.jpg',
+      caption: '오래 기억하고 싶은 순간들 ✨',
+      likes: '1,111',
+      comments: '댓글 11개 모두 보기',
+      time: '어제'
+    }
+  ],
+
+  galleryPhotos: [
+    { title: '민제 웃는 순간', image: 'images/photo-01.jpg' },
+    { title: '고양이 같은 이주', image: 'images/photo-02.jpg' },
+    { title: '젬킷 모먼트', image: 'images/photo-03.jpg' },
+    { title: '우리만의 암호', image: 'images/photo-04.jpg' },
+    { title: '다정한 손끝', image: 'images/photo-05.jpg' },
+    { title: '오늘의 기억', image: 'images/photo-06.jpg' },
+    { title: '핑크빛 하루', image: 'images/photo-07.jpg' },
+    { title: '같이 남긴 순간', image: 'images/photo-08.jpg' },
+    { title: '오래 간직하기', image: 'images/photo-09.jpg' }
+  ]
+};
+</script>
+</body></html>
